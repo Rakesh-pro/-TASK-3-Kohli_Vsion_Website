@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favi.png" type="image/png" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- external files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Instructor-Led Online Training With 24X7 Lifetime Support | Kohli-Vsion</title>
+</head>
+
+
+<!-- script goes here -->
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Feb 16, 2022 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demos").innerHTML = days + "days " + hours + "hrs "
+            + minutes + "mins " + seconds + "secs ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demos").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+    $('.carousel').carousel({
+        interval: 100
+    });
+
+
+
+    //tooltip
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            html: true
+        });
+    });
+
+
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+
+</script>
+
+<body>
+    <!-- alert form -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <p class="text-center m-0 alerttext" style="font-size: 1.3vw;color: black;"> #Offers/Discounts Mid Month Madness
+            - Upto 30% Off | OFFER ENDING
+            IN : </p>
+        <p id="demos" class="m-0 display-0 text-center alerttext" style="font-size: 1.3vw;color: black;"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- 1st navbar -->
+
+    <nav class="navbar sticky-top navbar-expand-md bg-primary navbar-dark ">
+        <a href="#" class="navbar-brand text-white" style="font-size: 2vw;"><img src="favicon.png" alt="logo"
+                class="img-fluid" width="90" height="100">Kohli-Vsion</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mynav">
+            <form class="form-inline mr-auto">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline bg-warning"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div class="ml-auto">
+                <a href="https://7eazfsr9j2agksc9apqqng-on.drv.tw/TASK_1/jquery/" class="btn bg-warning mr-1"
+                    style="font-size: 1vw;"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                    LogIn</a>
+                <a href="https://7eazfsr9j2agksc9apqqng-on.drv.tw/www.samplelogin.com/" class="btn bg-warning active"
+                    style="font-size: 1vw;"><i class="fa fa-user-plus" aria-hidden="true"></i>SignUp</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- added -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" style="font-size: 1vw;" type="button"
+                        id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Explore</button>
+                    <ul class="dropdown-menu multi-level" style="font-size: 1vw;" role="menu"
+                        aria-labelledby="dropdownMenu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">MobileApp Development</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Andriod SDK</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Database</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">XML</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">API</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">Web Development</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">HTML</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">CSS</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">JavaScript</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">Programming</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Java</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Python</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">C / C++</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">C#</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">FrameWorks</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#nav-framework">Spring</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">.Net</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Django</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Nodejs</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">Digital Marketing</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Google Analytics</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Social Media ROI</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" tabindex="-1" href="#">Fashion Design</a>
+                            <ul class="dropdown-menu" style="font-size: 1vw;">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Creativity & Arts</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Visualization</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 ml-5">
+                <div class="w-100 ">
+                    <marquee onbounce="javascript:alert('event has been triggered');" scrollamount="10%"
+                        style="font-size: 1vw;">Take advantage
+                        with
+                        expert-led courses from ₹4900. Ends tomorrow! <a href="#" class="grad">Grabnow</a></marquee>
+                </div>
+            </div>
+
+            <a href="#" class="nav-link ml-auto text-muted col-2" style="font-size: 1vw;">Company Blog</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- carousel -->
+
+    <div class="container">
+        <div class="row">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="front.jpg" alt="Los Angeles" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <button class="btn btn-primary" style="font-size: 1vw;">Explore</button>
+                            <p style="color:black;font-weight: bold;" style="font-size: 1vw;">Start a bright career
+                                through
+                                Kohli-Vsion </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="d.png" alt="Chicago" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3 style="color:black;font-weight: bold;font-size: 1vw;">Digital Marketing</h3>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ap.jpg" alt="New York" width="1100" height="500">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="web.png" alt="New York" width="1100" height="500">
+                        <div class="carousel-caption">
+
+                            <p style="color:black;font-weight: bold;font-size: 1vw;" class="lead">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="banner.jpg" alt="New York" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <button class="btn btn-primary" style="font-size: 1vw;">Register</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <hr>
+    </div>
+
+
+    <section class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-7 mr-auto ">
+                <br>
+                <h1>Your Course In Kohli-Vsion <br> To Success</h1>
+                <p style="color: black;">Build skills with courses, certificates, and degrees online from
+                    world-Recognized Company. <a href="#" class="nav-link">Kohli Media LLP</a></p>
+            </div>
+            <div class="col-5 ml-auto">
+                <br>
+                <img src="your_success.jpg" alt="success" style="border-radius: 50%;" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <br>
+        <hr>
+    </div>
+
+    <!-- cards -->
+
+    <div class="container">
+        <h4 style="font-size: 2vw;">Explore Over Wide Range Of Courses</h4>
+        <p style="color: black;">get started with a professionsal courses that will make your dream true</p>
+    </div>
+
+    <section class="container mt-5 mb-5 coursecard">
+        <div class="row">
+
+            <!-- navbar of cards -->
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" style="font-size: 1vw;background-color: #f5f6fa;"
+                        id="nav-web-tab" data-toggle="tab" href="#nav-web" role="tab" aria-controls="nav-home"
+                        aria-selected="true">Web
+                        Development</a>
+                    <a class="nav-item nav-link" style="font-size: 1vw;background-color: #f5f6fa;" id="nav-app-tab"
+                        data-toggle="tab" href="#nav-app" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">MobileApp Development</a>
+                    <a class="nav-item nav-link" style="font-size: 1vw;background-color: #f5f6fa;" id="nav-prog-tab"
+                        data-toggle="tab" href="#nav-prog" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">Programming</a>
+                    <a class="nav-item nav-link" style="font-size: 1vw;background-color: #f5f6fa;"
+                        id="nav-framework-tab" data-toggle="tab" href="#nav-framework" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">FrameWorks</a>
+                    <a class="nav-item nav-link" style="font-size: 1vw;background-color: #f5f6fa;" id="nav-digital-tab"
+                        data-toggle="tab" href="#nav-digital" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">Digital Marketing</a>
+                    <a class="nav-item nav-link" style="font-size: 1vw;background-color: #f5f6fa;" id="nav-fashion-tab"
+                        data-toggle="tab" href="#nav-fashion" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">Fashion Design</a>
+
+                </div>
+            </nav>
+            <div class="tab-content container" id="nav-tabContent">
+                <!-- web development -->
+                <div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumbo">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Build websites and applications with Web
+                                Development</h3>
+                            <p style="font-size: 1vw;color: white;">The world of web development is as wide as the
+                                internet itself. Much of our social and vocational lives play out on the internet, which
+                                prompts new industries aimed at creating, managing, and debugging the websites and
+                                applications that we increasingly rely on.</p>
+                        </div>
+                    </div>
+
+                    <!-- cards -->
+
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+
+                        <!-- html-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn HTML 5: The Complete Course <br>
+                            &#x2713;HTML 5 Website Design Development <br>
+                            &#x2713;Create the structure of the website</p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="HTML.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;The Complete 2021
+                                HTML5 &nbsp;Bootcamp <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- css-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn CSS 3: The Complete Course <br>
+                            &#x2713;Build Website using HTML 5 CSS <br>
+                            &#x2713;CSS easy to design Web Pages Layouts</p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="css.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;CSS Bootcamp - Master
+                                CSS (Including CSS Grid / Flexbox) <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- js-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;JavaScript Complete Syntax and Building blocks <br>
+                            &#x2713;Building Real World small but practical js Apps <br>
+                            &#x2713;Better understanding of DOM ( Document object Model )</p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="js.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Learn Javascript from
+                                Scratch - JS Tutorial for beginners <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- bootstrap-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn and create high quality Bootstrap 4 themes and UIs from scratch <br>
+                            &#x2713;Learn the Bootstrap 4 utilities, classes, components & JS widgets <br>using a custom sandbox environment <br>
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="bootstrap.png" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;The Complete
+                                Bootstrap 4 Guide: Beginner to Advanced <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!--jquery-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Add beautiful effects & animations to your sites <br>
+                            &#x2713;Use AJAX to add content to page dynamically from APIs like Flickr,TheMovieDB <br>
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="jq.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;The Complete jQuery
+                                Course: From Beginner To Advanced! <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- php-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Build a complete website using classes and objects in PHP <br>
+                            &#x2713;Understand the concepts behind object oriented PHP <br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="php.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;PHP for Beginners -
+                                Become a PHP Master - CMS Project <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- java-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Complete Java programming from the basic to the advance level.
+                            <br>
+                            &#x2713;Understand the concepts behind object oriented java<br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="java.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Java
+                                Tutorial Step by Step - become a programmer-->
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- database-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn what a database is
+                            <br>
+                            &#x2713;Learn how databases work and why are they important <br>&#x2713;Learn data modeling and the 3 levels of relational database design
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="data.jpeg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Java
+                                Tutorial Step by Step - become a programmer
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- complete web development-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Build websites with HTML & CSS
+                            <br>
+                            &#x2713;Build backend servers & APIs with PHP <br>&#x2713;Work with Relational databases like SQL
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="complete.jpg" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Full Stack Web
+                                Development For Beginners 2021
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- app development -->
+                <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-app-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumboapp">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Build Andriod & IOS apps with Mobile App
+                                Development</h3>
+                            <p style="font-size: 1vw;color: white;">89% of consumers media time is spent in mobile apps
+                                as per a recent Nielsen study. Therefore, it comes as no surprise that there is a huge
+                                demand for skilled app developers who can develop and maintain engaging mobile apps.
+                                Kohli-Vsion offers you certification courses in Android and iOS. </p>
+                        </div>
+                    </div>
+                    <!-- cards -->
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+
+                        <!-- andriod-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn To Create Apps For iOS & Android The Easy Way <br>
+                            &#x2713;Learn How To Reduce Development Time By Half <br></p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="android.jpg" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Android Java
+                                Masterclass - Become an App Developer <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- xml-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Uses for XML <br>
+                            &#x2713;The fundamental components of an XML document <br>
+                            &#x2713;Learn to define XML document</p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="xml.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Learn XML Crash
+                                Course: Discover Essential XML Fundamentals <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- andriod studio-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Create your very own application <br>
+                            &#x2713;Become an Android Professional <br>
+                            &#x2713;Earn Money from your App</p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="anstudio.jpg" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Android Studio
+                                Masterclass: Conquer the Android IDE <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- API-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, <br> REST, SOAP, OAuth, OpenID Connect, Postman, and Python. <br> Includes examples and a quiz.</p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="api.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;API and Web Service
+                                Introduction <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!--material design-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Create mobile app designs from scratch <br>
+                            &#x2713;Understand the differences between designing for iOS and Android <br>&#x2713;Create wireframe designs for any digital project
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="mat.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Material Design <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- here-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Build a complete website using classes and objects in PHP <br>
+                            &#x2713;Understand the concepts behind object oriented PHP <br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="php.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;PHP for Beginners -
+                                Become a PHP Master - CMS Project <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- java-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Complete Java programming from the basic to the advance level.
+                            <br>
+                            &#x2713;Understand the concepts behind object oriented java<br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="java.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Java
+                                Tutorial Step by Step - become a programmer-->
+                                <br>
+                                <p style="font-size: 0.7vw;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- database-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn what a database is
+                            <br>
+                            &#x2713;Learn how databases work and why are they important <br>&#x2713;Learn data modeling and the 3 levels of relational database design
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="data.jpeg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Java
+                                Tutorial Step by Step - become a programmer
+                                <br>
+                                <p style="font-size: 0.7vw;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- complete web development-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Build Your First Mobile App
+                            <br>
+                            &#x2713;Build Real-world Android apps like Twitter, Facebook, and Find my phone 
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="comapp.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;The Complete Android
+                                App Development For Beginners 2021
+                                <br>
+                                <p style="font-size: 0.7vw;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- programming -->
+
+                <div class="tab-pane fade" id="nav-prog" role="tabpanel" aria-labelledby="nav-prog-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumboprog">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Enhance Your Programming Skills</h3>
+                            <p style="font-size: 1vw;color: white;">Learn the most popular and useful programming
+                                languages, and become a master of it, choose the best roadmap for your dream with our
+                                certification courses. Kohli-Vsion offers
+                                you courses in legacy and trending technologies such as Java, Python, Perl, Ruby, c/c++
+                                and more. </p>
+                        </div>
+                    </div>
+                    <!-- cards -->
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+                        <!-- java-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Complete Java programming from the basic to the advance level.
+                            <br>
+                            &#x2713;Understand the concepts behind object oriented java<br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="java1.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Java
+                                Tutorial Step by Step - become a programmer-->
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- python-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Obtain a strong understanding on the fundamentals of python <br>
+                            &#x2713;Write your own independent programs in Python <br></p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="python.png" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Complete Python
+                                Tutorial for Beginners <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- c++-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Develop complex C++ applications <br>
+                            &#x2713;Understand C++ 11 <br>
+                            &#x2713;Be in a position to apply for jobs requiring good C++ knowledge</p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="cpp.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Beginning C++
+                                Programming - From Beginner to Beyond <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                        <!-- go-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;The ultimate comprehensive course <br>
+                            &#x2713;For beginners and experienced devs <br>
+                            &#x2713;Taught by a university professor</p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="go.jpeg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Go: The Complete
+                                Developer's Guide (Golang) <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- c#-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Master all the basics of C# Programming
+                           <br> &#x2713;Pass their exams related to C# <br> &#x2713;Develop problem solving ability
+                        </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="cs.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Microsoft C#
+                                programming -Complete Tutorial for Beginners <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!--R-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn to program in R at a good level <br>
+                            &#x2713;Learn how to use R Studio 
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="R.png" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;R Programming A-Z™: R
+                                For Data Science With Real Exercises! <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- framework -->
+
+
+                <div class="tab-pane fade" id="nav-framework" role="tabpanel" aria-labelledby="nav-framework-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumboframe">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Frameworks for Web & Mobile Application</h3>
+                            <p style="font-size: 1vw;color: white;">Learn the most popular and useful Frameworks, and
+                                become a master of it, with our certification courses. Kohli-Vsion offers you courses in
+                                legacy and trending technologies such as Spring, Django, Bootstrap4, .Net and more. </p>
+                        </div>
+                    </div>
+
+                    <!-- cards -->
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+                        <!-- bootstrap-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn basics of creating responsive web designs using twitter bootstrap
+                            <br>
+                            &#x2713;Understand the use of Bootstrap Component<br>&#x2713;Learn all about Abstraction and Inheritance
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="b5.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Bootstrap 5
+                                Responsive Web Design Tutorial For Beginners
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- angular-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Angular <br> &#x2713;Software Development <br> &#x2713;Web Development
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="an.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Angular 7 Course by
+                                Lior Avital -Become an Angular Expert <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- net-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Develop complex things through .net <br>
+                            &#x2713;Understand Microsoft .net <br>
+                           </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="net.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Microsoft .NET - From
+                                Beginner to Beyond <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!--flutter-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Learn to use Dart <br>
+                            &#x2713;Learn to create mobile apps with flutter <br>&#x2713;Learn the Dart and flutter basics
+                           </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="flutter.png" alt="html" width="240"
+                                height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Flutter Tutorials -
+                                Latest Packages and Components <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- digital marketing -->
+
+
+
+                <div class="tab-pane fade" id="nav-digital" role="tabpanel" aria-labelledby="nav-digital-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumbodigital">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Digital Marketing Courses for Absolute Beginners
+                                2021</h3>
+                            <p style="font-size: 1vw;color: white;">Learn the most popular and useful Digital Marketing
+                                course, and
+                                become a master of it, with our certification courses. Kohli-Vsion offers you courses in
+                                legacy and trending technologies. <br>&nbsp;<a href="#"
+                                    class="badge badge-warning">Professional Degree</a> </p>
+                        </div>
+                    </div>
+
+                    <!-- cards -->
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+                        <!-- digimarkt-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Digital Marketing Strategy, <br> Social Media Marketing, WordPress, <br> SEO, Digital Sale, Email, Instagram, Facebook, ads ..
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="digi.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Mega Digital
+                                Marketing Course A-Z: 12 Courses in 1 + Updates
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- d2-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Google Ads 2020: How our clients have transformed <br> their sales using Google Ads & get your Google <br> Ads certification!</p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="d2.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Ultimate Google Ads
+                                Training 2020: Profit with Pay Per Click<br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- d3-->
+
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Build a Digital Marketing Agency with <br> Social Media Marketing (SMMA), <br>
+                                Facebook Ads, Instagram Marketing, WordPress, SEO</p> </html>"
+                            style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img " src="d3.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Digital Marketing
+                                Agency | Social Media Marketing Business<br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fashion design -->
+
+
+                <div class="tab-pane fade" id="nav-fashion" role="tabpanel" aria-labelledby="nav-fashion-tab">
+                    <!-- jumbotron -->
+                    <div class="jumbotron jumbotron-fluid" id="jumbofashion">
+                        <div class="container">
+                            <h3 style="font-size: 2vw; color: white;">Fashion Design for Absolute Beginners 2021</h3>
+                            <p style="font-size: 1vw;color: white;">Learn the most popular and useful Fashion Design
+                                course, and
+                                become a master of it, with our certification courses. Kohli-Vsion offers you courses in
+                                legacy and trending Anaologies.<br>&nbsp;<a href="#"
+                                    class="badge badge-warning">Professional Degree</a> </p>
+                        </div>
+                    </div>
+
+                    <!-- cards -->
+                    <div class="d-flex flex-row flex-nowrap overflow-auto">
+                        <!-- IntroFashion-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Platforms for research<br>&#x2713;How to use them and create reference mood board on Pinterest
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="fas.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;Beginners- Fashion
+                                Design
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- fashion-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Set up folders that show in the library panel
+                                <br>&#x2713;Use the Internal Polygon Tool for Cutting Fabric
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="f2.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;How To Do Fashion
+                                Design Research
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+
+                        <!-- fashion-->
+                        <div class="card card-block mr-1 border-0 tiphtml" data-toggle="tooltip" data-placement="left"
+                            title="<html><h5>What you'll learn</h5><br><p>&#x2713;Set up folders that show in the library panel
+                                <br>&#x2713;Use the Internal Polygon Tool for Cutting Fabric
+                            </p> </html>" style="min-width: 17vw;">
+                            <img class="img-fluid m-auto card-img" src="f3.jpg" alt="html" width="240" height="135">
+                            <div class="card-title font-weight-bold" style="font-size: 1vw;">&nbsp;How To Do Fashion
+                                Design Research
+                                <br>
+                                <p style="font-size: 0.7vw;color: black;">#instructor name</p>
+                            </div>
+                            <div class="card-text mt-0 pt-0">
+                                <span class="checked">4.5</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-o checked">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span class="btn btn-primary btn-sm mb-1" style="font-size: 0.9vw;">Enroll</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <div class="container">
+        <br>
+        <hr>
+    </div>
+
+    <section class="container mt-5 mb-5">
+        <h1 class="text-center">Achieve your goals with Kohli-Vsion</h1>
+        <br>
+        <div class="row">
+            <div class="col-3">
+                <img src="skills.png" alt="" class="img-thumbnail" width="250" height="190"
+                    style="background-color: #f5f6fa;" m-auto>
+                <p class="text-center font-weight-bold" style="color: black;">Learn the latest skills</p>
+                <p class="text-center" style="color: black;">like business analytics, graphic design, Python, and more
+                </p>
+            </div>
+            <div class="col-3">
+                <img src="latest.png" alt="" class="img-thumbnail" width="250" height="190"
+                    style="background-color: #f5f6fa;" m-auto>
+                <p class="text-center font-weight-bold" style="color: black;">Get ready for a career</p>
+                <p class="text-center" style="color: black;">in high-demand fields like IT, AI and cloud engineering</p>
+            </div>
+            <div class="col-3">
+                <img src="earn.png" alt="" class="img-thumbnail" width="250" height="190"
+                    style="background-color: #f5f6fa;" m-auto>
+                <p class="text-center font-weight-bold" style="color: black;">Earn a degree</p>
+                <p class="text-center" style="color: black;">from a leading Company in business, computer science, and
+                    more</p>
+            </div>
+            <div class="col-3">
+                <img src="org.png" alt="" class="img-thumbnail " width="250" height="190"
+                    style="background-color: #f5f6fa;" m-auto>
+                <p class="text-center font-weight-bold" style="color: black;">Upskill your organization</p>
+                <p class="text-center" style="color: black;">with on-demand training and development programs</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr>
+    </div>
+
+    <!-- start review -->
+    <div class="container mt-2 mb-5">
+        <h1 class="text-center mb-4"> Learners Reviews</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="s2.jpg" class="mr-3 rounded-circle" alt="" style="width: 90px;">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-center" style="color: black;">it's a really big deal to
+                                                    offer an online DM at a reasonable price.This Program really
+                                                    appreciatable</p>
+                                                <p class="overview" style="color: black;"><b>Paula</b>, Media Analyst
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="nw.jpg" class="mr-3 rounded-circle" style="width: 90px;" alt="s2">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-center" style="color: black;">Really it was a efforts by
+                                                    the team of kohli-Vsion to get the things from scratch for online
+                                                    learners</p>
+                                                <p class="overview" style="color: black;"><b>ShowBot</b>, Web Developer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="s4.jpg" class="mr-3 rounded-circle" alt="" style="width: 90px;">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-center" style="color: black;">I was started from Zero
+                                                    Stage with Kohli-Vsion and Now i'm able to learn online.</p>
+                                                <p class="overview" style="color: black;"><b>Antonio</b>, Web Developer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="s5.jpg" class="mr-3 rounded-circle" alt="" style="width: 90px;">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-center" style="color: black;">I was started from Zero
+                                                    Stage with Kohli-Vsion and Now i'm able to learn online. </p>
+                                                <p class="overview" style="color: black;"><b>Anjinia</b>, Seo Analyst
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="s3.jpg" class="mr-3 rounded-circle" alt="" style="width: 90px;">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-center" style="color: black;">it's a really big deal to
+                                                    offer an online DM at a reasonable price.This Program really
+                                                    appreciatable</p>
+                                                <p class="overview" style="color: black;"><b>Maryia</b>, Media Analyst
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="media">
+                                        <img src="s1.png" class="mr-3 rounded-circle" alt="" style="width: 90px;">
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p class="text-centr" style="color: black;">Knowledge of Frameworks and
+                                                    digitai marketing professional degree are really nice & the
+                                                    explaning skills of the instructor are excellent.</p>
+                                                <p class="overview" style="color: black;"><b>Bob Mary</b>, professor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <br>
+
+
+
+    <section class="container mt-3 mb-3">
+        <h1 class="text-center">Frequently Asked Questions (FAQs)</h1>
+        <div id="accordion">
+            <div class="card border-0" style="font-size: 1.3vw;">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Q. Why I Trust This Company/institute?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse " data-parent="#accordion">
+                    <div class="card-body">
+                        This is one of the popular service based company in India and its services are utilized by
+                        number of company,MNCs according their requirement.
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0" style="font-size: 1.3vw;">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Q. Who should take an Online Course?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Students join our online courses for a variety of reasons and come from diverse backgrounds,
+                        professions, and age groups. With online courses, you can
+                        <br>&#8227; Advance your skill-set or begin a career change.
+                        <br>&#8227; Take the next step in your formal education.
+                        <br>&#8227; Ease the transition before entering a full-time academic program.
+                        <br>&#8227; Enjoy learning a new topic.
+                        Whatever the reason, our online courses are a flexible way of learning about the art world
+                        without disrupting your daily life.
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0" style="font-size: 1.3vw;">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Q. Are there prerequisites or language requirements?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        There are no prerequisites. Our courses are open to students of all backgrounds who are 18 years
+                        of age and older.
+                        All courses are conducted in English. Video lectures include English subtitles and the option to
+                        slow-down, pause, or replay lectures for better retention. Discussion boards are a critical
+                        component of each of our courses; therefore, we suggest students have a conversational knowledge
+                        of English when pursuing a Certificate of Completion. </div>
+                </div>
+            </div>
+            <div class="card border-0" style="font-size: 1.3vw;">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                        Q. My payment did not go through. What do I do?
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        We apologize for this inconvenience. We encourage you to reach out to your financial institution
+                        as further permissions may be needed to complete the payment. You are also welcome to write to
+                        kohli@til for further guidance. Please wait a full 24 hours before trying again. A strong
+                        Internet connection and up-to-date browser are strongly recommended. </div>
+                </div>
+            </div>
+            <div class="card border-0" style="font-size: 1.3vw;">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                        Q. I completed my course! Now what?
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Well done! You will have 90 days of read-only access to revisit and reflect on the course
+                        material. <br> &bull; <b>Get your certificate</b>: When you successfully complete an Online
+                        Course, you are eligible to receive a digital certificate of completion. </div>
+                </div>
+            </div>
+    </section>
+    <br>
+
+
+
+    <div class="container"><a href="#" id="back-to-top" class="btn btn-primary back-to-top border-0" role="button"><i
+                class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a></div>
+
+  
+
+    <!-- contact-->
+    <section class="container mt-3 mb-3">
+        <div class="row">
+            <div class="col-4 border-0">
+                <a href="#" style="font-size: 2vw;color: black;text-decoration: none;"><img src="favicon.png" alt="logo"
+                        class="img-fluid rounded-circle" width="90vw"><br>
+                        Kohli-Vsion</a><br>
+                <p style="color: black;">kohli-Vsion is an organisation powered by kohli-Media LLP. Providing excellent
+                    skills with lots of efforts to the online learners by the industry experts.</p>
+                <hr><br>
+                <p class="text-center" style="color: black;font-size: 1.8vw;">FOLLOW US</p>
+                <div class="row m-auto border-0">
+                    <div class="col-3"><a  href="https://www.facebook.com/KohliCompany" target="_blank" id="fa" class="fa fa-facebook"></a></div>
+                    <div class="col-3"><a href="https://twitter.com/KohliCompany" target="_blank" id="fa" class="fa fa-twitter"></a></div>
+                    <div class="col-3"><a href="https://www.linkedin.com/company/kohlicompany/" target="_blank" id="fa" class="fa fa-linkedin"></a></div>
+                    <div class="col-3"><a href="https://www.linkedin.com/company/kohlicompany/" target="_blank" id="fa" class="fa fa-instagram"></a></div>
+
+                </div>
+            </div>
+            <div class="col-3 border-0 mt-5 ">
+                <p class="text-center" style="font-size: 2vw;color: black;">Company</p>
+                <ul class="list-group">
+                    <li class="list-group-item bgm-primary text-center"><a href="https://kohli.company/KOHLI/company" style="text-decoration: none;color:black;font-size: 1vw;">About Us</a></li>
+                    <li class="list-group-item bgm-primary text-center"><a href="https://kohli.company/KOHLI/partner-with-us" style="text-decoration: none;color:black;font-size: 1vw;">Partner With Us</a></li>
+                    <li class="list-group-item bgm-primary text-center"><a href="https://kohli.company/KOHLI/work-with-us" style="text-decoration: none;color:black;font-size: 1vw;">Work With Us</a></li>
+                    <li class="list-group-item bgm-primary text-center"><a href="https://kohli.company/KOHLI/company" style="text-decoration: none;color:black;font-size: 1vw;">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-2 mt-5">
+                <p class="text-center pt-3 font-weight-bold" style="color: black;font-size: 1vw;">Courses</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">Web Dev</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">MobileApp Dev</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">Digital Marketing</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">Frameworks</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">Programming</p>
+                <p class="text-center" style="color: black;font-size: 1vw;">Fashion Design</p>
+            </div>
+            <div class="col-3 border-0 mt-5">
+                <p  class="text-center" style="color: black;font-size: 2vw;">Contact Info</p>
+               
+                <div class="pl-3 mt-4">
+                    <i style="font-size: 1.3vw;color: rgb(209, 131, 29);" class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<b style="font-size: 1vw;color: black;font-weight:500;">Website</b>
+                    <br><a style="font-size: 0.9vw;text-decoration: none;color: black;" href="https://kohli.company/KOHLI/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kohli.company/KOHLI</a><br><br>
+                    <i style="font-size: 1.3vw;color: rgb(209, 131, 29);" class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<b style="font-size: 1vw;color: black;font-weight:500;">Email</b>
+                    <br><a style="font-size: 0.9vw;text-decoration: none;color: black;" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;co@kohli.tel</a><br><br>
+                    <i style="font-size: 1.3vw;color: rgb(209, 131, 29);" class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<b style="font-size: 1vw;color: black;font-weight:500;">Phone</b>
+                    <br><a style="font-size: 0.9vw;text-decoration: none;color: black;" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US:+1-347-632-8098 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INT'L:+91-6280848783</a>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        
+    </section>
+
+    <section class="container-fluid bg-primary">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center pt-1" style="color: black;">&#169;Copyright 2021. All Rights Are Reserved by <a style="color:white;" href="https://kohli.company/KOHLI/">KOhli-Media LLP</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
